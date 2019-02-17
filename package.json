@@ -11,6 +11,10 @@
   ],
   "author": "Carl Saunders",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deadlybyte/eslint-plugin-jsx-form.git"
+  },
   "scripts": {
     "test": "mocha tests --recursive",
     "prepublish": "safe-publish-latest && not-in-publish"
