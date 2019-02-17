@@ -13,7 +13,7 @@ $ npm i eslint --save-dev
 Next, install `eslint-plugin-jsx-form`:
 
 ```
-$ npm install eslint-plugin-username-autocapitalize --save-dev
+$ npm install eslint-plugin-jsx-form --save-dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-jsx-form` globally.
