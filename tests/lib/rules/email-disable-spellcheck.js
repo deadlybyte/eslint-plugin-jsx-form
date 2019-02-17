@@ -43,6 +43,15 @@ ruleTester.run("email-disable-spellcheck", rule, {
       ]
     },
     {
+      code: '<input name="EmAiL" />',
+      errors: [
+        {
+          message: 'Set "spellcheck" attribute to "false" for email inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
       code: '<input name="email" />',
       errors: [
         {
@@ -53,6 +62,15 @@ ruleTester.run("email-disable-spellcheck", rule, {
     },
     {
       code: '<input name="email" spellcheck="true" />',
+      errors: [
+        {
+          message: 'Set "spellcheck" attribute to "false" for email inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
+      code: '<input id="EmAiL" />',
       errors: [
         {
           message: 'Set "spellcheck" attribute to "false" for email inputs',

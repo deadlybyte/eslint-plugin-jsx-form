@@ -23,6 +23,15 @@ ruleTester.run("username-disable-spellcheck", rule, {
   ],
   invalid: [
     {
+      code: '<input name="UsErNaMe" />',
+      errors: [
+        {
+          message: 'Set "spellcheck" attribute to "false" for username inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
       code: '<input name="username" />',
       errors: [
         {
@@ -33,6 +42,15 @@ ruleTester.run("username-disable-spellcheck", rule, {
     },
     {
       code: '<input name="username" spellcheck="true" />',
+      errors: [
+        {
+          message: 'Set "spellcheck" attribute to "false" for username inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
+      code: '<input id="UsErNaMe" />',
       errors: [
         {
           message: 'Set "spellcheck" attribute to "false" for username inputs',

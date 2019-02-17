@@ -36,6 +36,16 @@ ruleTester.run("username-autocapitalize", rule, {
 
   invalid: [
     {
+      code: '<input name="UsErNaMe" />',
+      errors: [
+        {
+          message:
+            'Set "autocapitalize" attribute to "none" or "off" for username inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
       code: '<input name="username" />',
       errors: [
         {
@@ -77,6 +87,16 @@ ruleTester.run("username-autocapitalize", rule, {
     },
     {
       code: '<input name="username" autocapitalize="characters" />',
+      errors: [
+        {
+          message:
+            'Set "autocapitalize" attribute to "none" or "off" for username inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
+      code: '<input id="UsErNaMe" />',
       errors: [
         {
           message:

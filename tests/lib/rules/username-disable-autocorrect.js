@@ -34,6 +34,15 @@ ruleTester.run("username-disable-autocorrect", rule, {
 
   invalid: [
     {
+      code: '<input name="UsErNaMe" />',
+      errors: [
+        {
+          message: 'Set "autocorrect" attribute to "off" for username inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
       code: '<input name="username" />',
       errors: [
         {
@@ -44,6 +53,15 @@ ruleTester.run("username-disable-autocorrect", rule, {
     },
     {
       code: '<input name="username" autocorrect="on" />',
+      errors: [
+        {
+          message: 'Set "autocorrect" attribute to "off" for username inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
+      code: '<input id="UsErNaMe" />',
       errors: [
         {
           message: 'Set "autocorrect" attribute to "off" for username inputs',

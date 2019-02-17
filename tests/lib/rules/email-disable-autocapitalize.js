@@ -88,6 +88,16 @@ ruleTester.run("email-autocapitalize", rule, {
       ]
     },
     {
+      code: '<input name="EmAiL" />',
+      errors: [
+        {
+          message:
+            'Set "autocapitalize" attribute to "none" or "off" for email inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
       code: '<input name="email" />',
       errors: [
         {
@@ -129,6 +139,16 @@ ruleTester.run("email-autocapitalize", rule, {
     },
     {
       code: '<input name="email" autocapitalize="characters" />',
+      errors: [
+        {
+          message:
+            'Set "autocapitalize" attribute to "none" or "off" for email inputs',
+          type: "JSXOpeningElement"
+        }
+      ]
+    },
+    {
+      code: '<input id="EmAiL" />',
       errors: [
         {
           message:
