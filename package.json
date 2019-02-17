@@ -1,0 +1,31 @@
+{
+  "name": "eslint-plugin-jsx-form",
+  "version": "0.0.0",
+  "description": "Static AST checker for HTML form rules on JSX elements.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "jsx",
+    "html"
+  ],
+  "author": "Carl Saunders",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "prepublish": "safe-publish-latest && not-in-publish"
+  },
+  "dependencies": {
+    "jsx-ast-utils": "^2.0.1",
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "mocha": "^5.2.0",
+    "safe-publish-latest": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
