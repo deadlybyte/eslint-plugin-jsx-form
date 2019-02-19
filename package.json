@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jsx-form",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static AST checker for HTML form rules on JSX elements.",
   "keywords": [
     "eslint",
