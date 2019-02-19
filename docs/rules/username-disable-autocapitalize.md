@@ -4,7 +4,7 @@ Some browsers try to help the user by auto-capitalizing words, but this can be f
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to warn when the autocapitalize attribute is not set to none or off on an element that is used for collecting a username.
 
 Examples of **incorrect** code for this rule:
 

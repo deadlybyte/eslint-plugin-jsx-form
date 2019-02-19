@@ -4,7 +4,7 @@ Some browsers try to help the user by spell checking words and marking those inc
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to warn when the spellcheck attribute is not set to false on an element that is used for collecting a username.
 
 Examples of **incorrect** code for this rule:
 

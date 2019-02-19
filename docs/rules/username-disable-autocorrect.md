@@ -4,7 +4,7 @@ iOS will try to help the user and auto correct words that it thinks are mistakes
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to warn when the autocorrect attribute is not set to off on an element that is used for collecting a username.
 
 Examples of **incorrect** code for this rule:
 
